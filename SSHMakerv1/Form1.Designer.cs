@@ -34,6 +34,7 @@ namespace SSHMakerv1
             this.logger = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -122,6 +123,7 @@ namespace SSHMakerv1
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.button8);
             this.panel6.Controls.Add(this.button7);
             this.panel6.Controls.Add(this.label11);
             this.panel6.Controls.Add(this.textBox10);
@@ -139,6 +141,16 @@ namespace SSHMakerv1
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(619, 363);
             this.panel6.TabIndex = 1;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(99, 298);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(119, 40);
+            this.button8.TabIndex = 18;
+            this.button8.Text = "View Database";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // button7
             // 
@@ -273,6 +285,7 @@ namespace SSHMakerv1
             this.button6.TabIndex = 12;
             this.button6.Text = "Gen";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -282,6 +295,7 @@ namespace SSHMakerv1
             this.button5.TabIndex = 11;
             this.button5.Text = "Gen";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button2
             // 
@@ -534,6 +548,7 @@ namespace SSHMakerv1
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
 
